@@ -1,0 +1,20 @@
+SQLALCHEMY CONTRAINTS 
+objectives 
+    1. define the contraints and validation in data processing 
+    2. restric databse input to specifi formats using contraints
+
+
+to keep invalid values out of our databse we can use SQLAlchemy contraints.
+These contraints work at a base level to control the data to the database.
+
+UNIQUE AND NULLABLE CONTRAINTS
+certain contrainsta can be added directly to the column as we define it.
+the nullable contrainst allows us to make sure that the values added to the columns are not null.
+we can define this by adding the argument nullable=false to the column contructor.
+
+if its requires that the vlies in your columns be unique then the unique contraint can be specified by adding the argument unique=True to the 
+column contructor.
+
+CHECKCONTRAINTS
+CheckContraint can be creted for columns and tables.
+the text of the CheckContrain is passed directly through to the database.
